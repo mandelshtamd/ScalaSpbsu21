@@ -5,8 +5,8 @@ import org.spbsu.mkn.scala.IntList.{fromSeq, size, sum}
 
 class IntListTest extends AnyFunSuite {
   test("head") {
-    assert(fromSeq(Seq(1,2,3)).head.i == 1)
-    assert(fromSeq(Seq(1)).head.i == 1)
+    assert(fromSeq(Seq(1,2,3)).head == 1)
+    assert(fromSeq(Seq(1)).head == 1)
     assertThrows[UnsupportedOperationException](fromSeq(Seq()).head)
   }
 
