@@ -3,8 +3,7 @@ package org.spbsu.mkn.scala
 import org.spbsu.mkn.scala.IntList._
 
 sealed trait IntList {
-  def i: Int
-  def head: IntList
+  def head: Int
   def tail: IntList
   def drop(n: Int): IntList
   def take(n: Int): IntList
